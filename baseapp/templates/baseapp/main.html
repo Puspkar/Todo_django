@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DO List</title>
+
+    <style>
+        body{
+            background-color: rgb(15, 104, 92);
+            font-family: 'Russo One', sans-serif;
+            padding-top: 50px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,a,
+        h6{
+            font-family: 'Raleway',sans-serif;
+        }
+
+        p{
+            color: #04365f
+        }
+
+        .container{
+            max-width: 550px;
+            margin:auto;
+            background-color: #fff;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0,0,0.21);
+        }
+
+        .header-bar{
+            display:flex;
+            justify-content: space-between;
+            color: rgb(58, 36, 36);
+            padding: 10px;
+            border-radius: 5px 5px 0 0 ;
+            background: linear-gradient(90deg,#EEA390 0%, #6b830c 43%, #131a63 100% );
+        }s
+
+        .header-bar a{
+            color:rgb(7, 18, 119);
+            text-decoration:none;
+        }
+
+        .container a{
+            color:rgb(7, 18, 119);
+            text-decoration:none;
+        }
+
+        .task-wrapper{
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 10px;
+            
+            border-top: 1px solid rgb(226,226,226);
+        }
+        .delete-link{
+            font-size:25px;
+        }
+
+        .task-complete-icon{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105,192,105);
+            border-radius: 50%;
+        }
+
+        .task-incomplete-icon{
+            height: 20px;
+            width: 20px;
+            
+            background-color: rgb(180, 218, 8);
+            border-radius: 50%;
+        }
+        #search-add-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            padding:10px;
+        }
+
+        #add-link{
+            color: #791c13;
+            text-decoration:none;
+            font-size:42px;
+            text-shadow: 1px 1px #81413b;
+        }
+        .button{
+            background-color: #81413b;
+        }
+        
+
+    </style>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>
